@@ -66,17 +66,19 @@ export default class App extends Component {
 
   addTaskToList = (text, important, date) => {
     let tasks = [...this.state.tasks];
-    tasks.push({
-      id: this.state.tasks.length,
-      text: text,
-      date: date,
-      important: important,
-      active: true,
-      finishDate: null,
-    });
-    this.setState({
-      tasks,
-    });
+    if (text.length > 0) {
+      tasks.push({
+        id: this.state.tasks.length,
+        text: text,
+        date: date,
+        important: important,
+        active: true,
+        finishDate: null,
+      });
+      this.setState({
+        tasks,
+      });
+    }
   };
 
   render() {

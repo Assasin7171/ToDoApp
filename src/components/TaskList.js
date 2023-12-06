@@ -37,7 +37,7 @@ function TaskList(props) {
 
       <div className="done">
         <h3>
-          Zadania zrobione <em>({done.length})</em>
+          Zadania ukończone <em>({done.length})</em>
         </h3>
         {doneTasks.slice(0, 5)}
         {done.length > 5 && (
