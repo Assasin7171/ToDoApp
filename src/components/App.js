@@ -6,22 +6,22 @@ import "./App.css";
 export default class App extends Component {
   state = {
     tasks: [
-      // {
-      //   id: 0,
-      //   text: "skończyć niektóre gry !",
-      //   date: "2024-02-15",
-      //   important: false,
-      //   active: true,
-      //   finishDate: null,
-      // },
-      // {
-      //   id: 1,
-      //   text: "umyć podłogę",
-      //   date: "2024-02-15",
-      //   important: true,
-      //   active: true,
-      //   finishDate: null,
-      // },
+      {
+        id: 0,
+        text: "skończyć niektóre gry !",
+        date: "2024-02-15",
+        important: false,
+        active: true,
+        finishDate: null,
+      },
+      {
+        id: 1,
+        text: "umyć podłogę",
+        date: "2024-02-15",
+        important: true,
+        active: true,
+        finishDate: null,
+      },
     ],
   };
 
